@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urgence Toiture Paris — Couvreur disponible 24h/24 | Île-de-France</title>
+  <meta name="description" content="Couvreur urgence Paris et IDF. Fuite de toit, tuile cassée, infiltration d'eau ? Intervention rapide, devis gratuit. Appelez maintenant : 07 57 63 22 10" />
+  <meta name="keywords" content="urgence toiture paris, couvreur urgence paris, fuite toit paris, réparation toiture urgente, couvreur paris 75, sos toiture paris" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── TOKEN SYSTEM ─────────────────────────────────────── */
+    :root {
+      --noir:        #0d1117;
+      --ardoise:     #161b27;
+      --ardoise-mid: #1e2538;
+      --ardoise-lit: #262f47;
+      --rouge:       #e63946;
+      --rouge-dark:  #c1121f;
+      --blanc:       #f0f2f5;
+      --gris:        #8b95a8;
+      --gris-lit:    #bbc4d4;
+      --or:          #f4a261;
+
+      --ff-title: 'Barlow Condensed', sans-serif;
+      --ff-body:  'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--ardoise);
+      color: var(--blanc);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── BARRE D'URGENCE ──────────────────────────────────── */
+    .urgency-bar {
+      background: var(--rouge);
+      text-align: center;
+      padding: 10px 20px;
+      font-family: var(--ff-title);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .urgency-bar a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .pulse {
+      display: inline-block;
+      width: 9px; height: 9px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 8px;
+      animation: pulse 1.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      background: var(--noir);
+      background-image:
+        radial-gradient(ellipse 70% 50% at 80% 50%, rgba(230,57,70,0.12) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      padding: 80px 20px 70px;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      font-family: var(--ff-title);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--rouge);
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: var(--ff-title);
+      font-weight: 900;
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      margin-bottom: 22px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--rouge);
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--gris-lit);
+      max-width: 520px;
+      margin: 0 auto 38px;
+      line-height: 1.55;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--rouge);
+      color: #fff;
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.12s;
+    }
+    .btn-primary:hover { background: var(--rouge-dark); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: transparent;
+      color: var(--blanc);
+      font-family: var(--ff-title);
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border: 2px solid var(--ardoise-lit);
+      cursor: pointer;
+      transition: border-color 0.18s, color 0.18s;
+    }
+    .btn-secondary:hover { border-color: var(--gris); color: #fff; }
+
+    .hero-badges {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: var(--gris-lit);
+      font-weight: 500;
+    }
+    .badge-dot {
+      width: 7px; height: 7px;
+      background: var(--rouge);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── PROBLÈMES ────────────────────────────────────────── */
+    .section {
+      padding: 72px 20px;
+    }
+    .section-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-family: var(--ff-title);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rouge);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 44px;
+      letter-spacing: -0.01em;
+    }
+    .section-title span { color: var(--gris); }
+
+    /* grille de problèmes */
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2px;
+    }
+    .problem-card {
+      background: var(--ardoise-mid);
+      padding: 28px 26px;
+      cursor: pointer;
+      transition: background 0.15s;
+      border-left: 3px solid transparent;
+    }
+    .problem-card:hover {
+      background: var(--ardoise-lit);
+      border-left-color: var(--rouge);
+    }
+    .problem-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .problem-title {
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+    .problem-desc { font-size: 0.9rem; color: var(--gris-lit); line-height: 1.5; }
+
+    /* ─── SERVICES ─────────────────────────────────────────── */
+    .services-bg { background: var(--noir); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1px;
+      background: var(--ardoise-lit);
+    }
+    .service-item {
+      background: var(--noir);
+      padding: 32px 28px;
+    }
+    .service-num {
+      font-family: var(--ff-title);
+      font-weight: 900;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--rouge);
+      margin-bottom: 14px;
+    }
+    .service-name {
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .service-desc { font-size: 0.88rem; color: var(--gris); line-height: 1.5; }
+
+    /* ─── ZONE ─────────────────────────────────────────────── */
+    .zone-bg { background: var(--ardoise); }
+    .zone-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 700px) { .zone-wrapper { grid-template-columns: 1fr; } }
+    .zone-map {
+      background: var(--ardoise-mid);
+      border-radius: 0;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .zone-dept {
+      background: var(--ardoise-lit);
+      padding: 10px 14px;
+      font-family: var(--ff-title);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .zone-dept .code {
+      font-size: 0.78rem;
+      color: var(--rouge);
+      font-weight: 800;
+    }
+
+    /* ─── RÉASSURANCE ──────────────────────────────────────── */
+    .trust-bg { background: var(--noir); }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1px;
+      background: var(--ardoise-lit);
+    }
+    .trust-item {
+      background: var(--noir);
+      padding: 36px 28px;
+      text-align: center;
+    }
+    .trust-icon { font-size: 2rem; margin-bottom: 14px; }
+    .trust-title {
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .trust-desc { font-size: 0.88rem; color: var(--gris); line-height: 1.5; }
+
+    /* ─── FORMULAIRE ────────────────────────────────────────── */
+    .form-bg { background: var(--ardoise-mid); }
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: start;
+    }
+    @media (max-width: 760px) { .form-layout { grid-template-columns: 1fr; } }
+
+    .form-intro p { color: var(--gris-lit); font-size: 1rem; margin-bottom: 28px; line-height: 1.6; }
+    .form-stat {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .form-stat-num {
+      font-family: var(--ff-title);
+      font-weight: 900;
+      font-size: 2.2rem;
+      color: var(--rouge);
+      line-height: 1;
+    }
+    .form-stat-label { font-size: 0.88rem; color: var(--gris-lit); line-height: 1.35; }
+
+    form { display: flex; flex-direction: column; gap: 14px; }
+    form input, form select, form textarea {
+      background: var(--ardoise-lit);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--blanc);
+      font-family: var(--ff-body);
+      font-size: 0.95rem;
+      padding: 13px 16px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+    form input:focus, form select:focus, form textarea:focus {
+      border-color: var(--rouge);
+    }
+    form input::placeholder, form textarea::placeholder { color: var(--gris); }
+    form select option { background: var(--ardoise); }
+    form textarea { min-height: 110px; resize: vertical; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+
+    .btn-submit {
+      background: var(--rouge);
+      color: #fff;
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 16px 28px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+      width: 100%;
+    }
+    .btn-submit:hover { background: var(--rouge-dark); }
+    .form-note { font-size: 0.78rem; color: var(--gris); text-align: center; margin-top: 4px; }
+
+    .form-success {
+      display: none;
+      background: rgba(230,57,70,0.12);
+      border: 1px solid var(--rouge);
+      padding: 24px;
+      text-align: center;
+    }
+    .form-success strong { font-family: var(--ff-title); font-size: 1.3rem; display: block; margin-bottom: 6px; }
+
+    /* ─── FOOTER ────────────────────────────────────────────── */
+    footer {
+      background: var(--noir);
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    footer p { font-size: 0.85rem; color: var(--gris); line-height: 1.8; }
+    footer a { color: var(--gris-lit); text-decoration: underline; text-underline-offset: 3px; }
+    footer a:hover { color: var(--blanc); }
+
+    /* ─── STICKY CTA MOBILE ─────────────────────────────────── */
+    .sticky-call {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--rouge);
+      color: #fff;
+      text-align: center;
+      padding: 16px 20px;
+      font-family: var(--ff-title);
+      font-weight: 800;
+      font-size: 1.2rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      z-index: 999;
+    }
+    @media (max-width: 640px) { .sticky-call { display: block; } }
+
+    /* ─── DIVIDER ───────────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08) 50%, transparent);
+    }
+  </style>
+</head>
+<body>
+
+<!-- BARRE URGENCE -->
+<div class="urgency-bar">
+  <span class="pulse"></span>
+  Fuite active ? Appelez maintenant :
+  <a href="tel:0757632210">07 57 63 22 10</a>
+  — Réponse immédiate
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Couvreur — Paris &amp; Île-de-France</div>
+  <h1>Urgence<br><em>Toiture</em><br>Paris</h1>
+  <p class="hero-sub">
+    Fuite, tuile cassée, infiltration, gouttière arrachée.
+    Intervention rapide en 24h sur Paris et toute l'IDF.
+    Devis &amp; diagnostic gratuits.
+  </p>
+  <div class="hero-ctas">
+    <a href="tel:0757632210" class="btn-primary">
+      📞 07 57 63 22 10
+    </a>
+    <a href="#formulaire" class="btn-secondary">
+      Devis gratuit →
+    </a>
+  </div>
+  <div class="hero-badges">
+    <div class="badge"><span class="badge-dot"></span> Réponse sous 24h</div>
+    <div class="badge"><span class="badge-dot"></span> Diagnostic offert</div>
+    <div class="badge"><span class="badge-dot"></span> Assurance décennale</div>
+    <div class="badge"><span class="badge-dot"></span> Paris &amp; toute l'IDF</div>
+    <div class="badge"><span class="badge-dot"></span> Devis sans engagement</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROBLÈMES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Votre situation</div>
+    <h2 class="section-title">Quel est <span>votre problème</span><br>de toiture ?</h2>
+    <div class="problems-grid">
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Réparation / intervention urgente'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">💧</div>
+        <div class="problem-title">Fuite / infiltration d'eau</div>
+        <div class="problem-desc">Taches d'humidité, auréoles au plafond, eau qui coule. Urgence à traiter vite.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Réparation / intervention urgente'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🏚️</div>
+        <div class="problem-title">Tuile ou ardoise cassée</div>
+        <div class="problem-desc">Après tempête ou chute d'objet. La toiture est compromise, risque d'infiltration immédiat.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Zinguerie (gouttières, noues, solins, zinc)'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🌧️</div>
+        <div class="problem-title">Gouttière bouchée / arrachée</div>
+        <div class="problem-desc">Débordements, eau contre le mur, fissures de façade. À régler avant l'hiver.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Entretien et démoussage de toiture'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🌿</div>
+        <div class="problem-title">Mousse &amp; végétation</div>
+        <div class="problem-desc">Toiture verdie, mousses entre les tuiles. Démoussage + traitement hydrofuge.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Rénovation de toiture (zinc, ardoises, tuiles)'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🔨</div>
+        <div class="problem-title">Rénovation complète</div>
+        <div class="problem-desc">Toiture ancienne, refaire à neuf en zinc, ardoises ou tuiles. Devis gratuit.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Pose de Velux et isolation sous toiture'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🪟</div>
+        <div class="problem-title">Velux &amp; isolation combles</div>
+        <div class="problem-desc">Fenêtre de toit à poser ou remplacer. Isolation thermique des combles.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('besoin').value='Diagnostic / estimation (gratuit sous conditions)'; document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">🔍</div>
+        <div class="problem-title">Je ne sais pas d'où ça vient</div>
+        <div class="problem-desc">Diagnostic visuel gratuit. On monte voir, on identifie et on chiffre sans engagement.</div>
+      </div>
+      <div class="problem-card" onclick="document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
+        <div class="problem-icon">📋</div>
+        <div class="problem-title">Autre demande</div>
+        <div class="problem-desc">Syndic, agence immo, sous-traitance, devis urgent… Décrivez, on s'adapte.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="section services-bg">
+  <div class="section-inner">
+    <div class="section-label">Prestations</div>
+    <h2 class="section-title">Ce qu'on <span>fait</span></h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-num">— 01</div>
+        <div class="service-name">Réparation urgente</div>
+        <div class="service-desc">Fuite active, tuile cassée, pénétration d'eau. Intervention prioritaire sous 24–48h.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">— 02</div>
+        <div class="service-name">Rénovation toiture</div>
+        <div class="service-desc">Reprise complète en zinc, ardoises naturelles ou tuiles. Charpente si nécessaire.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">— 03</div>
+        <div class="service-name">Zinguerie</div>
+        <div class="service-desc">Gouttières, noues, solins, chéneaux, couvertines. Étanchéité parfaite.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">— 04</div>
+        <div class="service-name">Démoussage</div>
+        <div class="service-desc">Nettoyage haute pression, traitement biocide, hydrofuge longue durée.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">— 05</div>
+        <div class="service-name">Velux &amp; ISO combles</div>
+        <div class="service-desc">Pose, remplacement fenêtres de toit. Isolation thermique des combles perdus ou aménagés.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">— 06</div>
+        <div class="service-name">Diagnostic gratuit</div>
+        <div class="service-desc">On monte voir votre toiture, on vous explique exactement ce qu'il faut faire. Zéro engagement.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ZONE -->
+<section class="section zone-bg">
+  <div class="section-inner">
+    <div class="zone-wrapper">
+      <div>
+        <div class="section-label">Zone d'intervention</div>
+        <h2 class="section-title">Paris &amp;<br><span>Île-de-France</span></h2>
+        <p style="color:var(--gris-lit); font-size:1rem; line-height:1.65; margin-bottom:28px;">
+          Nous intervenons sur l'ensemble de l'Île-de-France.
+          Devis déplacé gratuit dans Paris &amp; petite couronne.
+          Grande couronne sur estimation.
+        </p>
+        <a href="tel:0757632210" class="btn-primary">Vérifier ma zone →</a>
+      </div>
+      <div class="zone-map">
+        <div class="zone-dept">Paris <span class="code">75</span></div>
+        <div class="zone-dept">Val-de-Marne <span class="code">94</span></div>
+        <div class="zone-dept">Hauts-de-Seine <span class="code">92</span></div>
+        <div class="zone-dept">Seine-St-Denis <span class="code">93</span></div>
+        <div class="zone-dept">Val-d'Oise <span class="code">95</span></div>
+        <div class="zone-dept">Yvelines <span class="code">78</span></div>
+        <div class="zone-dept">Essonne <span class="code">91</span></div>
+        <div class="zone-dept">Seine-et-Marne <span class="code">77</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RÉASSURANCE -->
+<section class="section trust-bg">
+  <div class="section-inner">
+    <div class="section-label">Pourquoi nous</div>
+    <h2 class="section-title">Simple &amp; <span>sans surprise</span></h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🔍</div>
+        <div class="trust-title">Diagnostic offert</div>
+        <div class="trust-desc">On monte voir votre toiture avant de chiffrer quoi que ce soit. Sans engagement.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📋</div>
+        <div class="trust-title">Devis clair</div>
+        <div class="trust-desc">Prix détaillé poste par poste. Aucun frais caché. Vous savez exactement ce que vous payez.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-title">Réactivité</div>
+        <div class="trust-desc">Réponse sous 24h. Pour les fuites actives, on organise l'intervention le jour même.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-title">Assurance décennale</div>
+        <div class="trust-desc">Tous nos travaux sont couverts par une assurance décennale en règle. Tranquillité totale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FORMULAIRE -->
+<section class="section form-bg" id="formulaire">
+  <div class="section-inner">
+    <div class="form-layout">
+      <div class="form-intro">
+        <div class="section-label">Devis gratuit</div>
+        <h2 class="section-title">Décrivez<br><span>votre besoin</span></h2>
+        <p>Remplissez ce formulaire en 2 minutes. On vous rappelle sous 24h — généralement bien avant.</p>
+
+        <div class="form-stat">
+          <div class="form-stat-num">&lt;24h</div>
+          <div class="form-stat-label">Délai de réponse<br>garanti</div>
+        </div>
+        <div class="form-stat">
+          <div class="form-stat-num">100%</div>
+          <div class="form-stat-label">Gratuit &amp; sans<br>engagement</div>
+        </div>
+        <div class="form-stat">
+          <div class="form-stat-num">75–77</div>
+          <div class="form-stat-label">Tous les départements<br>Île-de-France couverts</div>
+        </div>
+
+        <p style="margin-top:28px; font-size:0.85rem; color: var(--gris);">
+          📞 Préférez l'appel direct ?<br>
+          <a href="tel:0757632210" style="color: var(--rouge); font-weight:600;">07 57 63 22 10</a> &nbsp;·&nbsp;
+          <a href="https://wa.me/33757632210" style="color: var(--gris-lit);">WhatsApp</a> &nbsp;·&nbsp;
+          <a href="mailto:services@adchantiers.fr" style="color: var(--gris-lit);">services@adchantiers.fr</a>
+        </p>
+      </div>
+
+      <div>
+        <form id="devisForm" onsubmit="handleSubmit(event)">
+          <select id="besoin" name="besoin" required>
+            <option value="" disabled selected>Nature de la demande *</option>
+            <option>Réparation / intervention urgente</option>
+            <option>Rénovation de toiture (zinc, ardoises, tuiles)</option>
+            <option>Zinguerie (gouttières, noues, solins, zinc)</option>
+            <option>Entretien et démoussage de toiture</option>
+            <option>Pose de Velux et isolation sous toiture</option>
+            <option>Diagnostic / estimation (gratuit sous conditions)</option>
+            <option>Autre / je ne sais pas encore</option>
+          </select>
+          <div class="form-row">
+            <input type="text" name="nom" placeholder="Prénom &amp; Nom *" required />
+            <input type="tel" name="tel" placeholder="Téléphone *" required />
+          </div>
+          <input type="email" name="email" placeholder="Adresse e-mail *" required />
+          <input type="text" name="ville" placeholder="Ville / Code postal *" required />
+          <select name="profil">
+            <option value="" disabled selected>Vous êtes… (optionnel)</option>
+            <option>Particulier</option>
+            <option>Syndic / copropriété</option>
+            <option>Agence immobilière</option>
+            <option>Architecte</option>
+            <option>Commerce / entreprise</option>
+            <option>Secteur public</option>
+            <option>Autre professionnel</option>
+          </select>
+          <textarea name="description" placeholder="Description de votre problème (optionnel)"></textarea>
+          <button type="submit" class="btn-submit">Envoyer ma demande →</button>
+          <p class="form-note">Vos coordonnées sont utilisées uniquement pour vous recontacter. Aucune revente à des tiers.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <strong>✅ Demande bien reçue !</strong>
+          Merci. Nous allons étudier votre demande et vous contacter très rapidement, généralement sous 24h.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <strong style="font-family:var(--ff-title); font-size:1rem; letter-spacing:0.05em;">URGENCE TOITURE PARIS</strong><br>
+    Service assuré par <a href="https://www.adchantiers.co" target="_blank">AD Chantiers — ADCH Couverture-Zinguerie</a><br>
+    📞 <a href="tel:0757632210">07 57 63 22 10</a> &nbsp;·&nbsp;
+    <a href="mailto:services@adchantiers.fr">services@adchantiers.fr</a> &nbsp;·&nbsp;
+    <a href="https://wa.me/33757632210">WhatsApp</a><br>
+    Île-de-France · Paris 75 · 92 · 93 · 94 · 95 · 78 · 91 · 77
+  </p>
+</footer>
+
+<!-- STICKY MOBILE -->
+<a href="tel:0757632210" class="sticky-call">📞 Appeler maintenant</a>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('devisForm');
+    const success = document.getElementById('formSuccess');
+
+    // Envoi Formspree (remplacez YOUR_FORM_ID par votre ID Formspree)
+    const data = new FormData(form);
+    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).catch(() => {});
+
+    form.style.display = 'none';
+    success.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
